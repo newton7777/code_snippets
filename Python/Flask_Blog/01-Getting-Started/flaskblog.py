@@ -1,7 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
 
-
+#decorators are ways to add additional functionality to existing function 
+#we can have multiple routes handle by the same function 
 @app.route("/")
 @app.route("/home")
 def home():
@@ -14,4 +15,5 @@ def about():
 
 
 if __name__ == '__main__':
+    # help us to see changes each time we save the filenin real time 
     app.run(debug=True)
